@@ -1,0 +1,101 @@
+{
+    "selecoes":[
+        {
+            "id": "1",
+            "nome": "Brasil",
+            "tecnico": "Carlo Ancelotti",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Brazilian_Football_Confederation_logo.svg/250px-Brazilian_Football_Confederation_logo.svg.png",
+            "grupo": "G",
+            "conquistas": [
+                {
+                    "ano": 1958,
+                    "pais": "Suécia"
+                },
+                {
+                    "ano": 1962,
+                    "pais": "Chile"
+                },
+                {
+                    "ano": 1970,
+                    "pais": "México"
+                },
+                {
+                    "ano": 1994,
+                    "pais": "Estados Unidos"
+                },
+                {
+                    "ano": 2002,
+                    "pais": "Coreia do Sul/Japão"
+                }
+            ],
+            "jogadores": [
+                {
+                    "id": "1",
+                    "nome": "Neymar",
+                    "posicao": "Meio-campista",
+                    "numero": 10   
+                },
+                {
+                    "id": "2",
+                    "nome": "Alisson",
+                    "posicao": "Goleiro",
+                    "numero": 1
+                },
+                {
+                    "id": "3",
+                    "nome": "Casemiro",
+                    "posicao": "Volante",
+                    "numero": 5 
+                },
+                {
+                    "id": "4",
+                    "nome": "Marquinhos",
+                    "posicao": "Zagueiro",
+                    "numero": 4       
+                },
+                {
+                    "id": "5",
+                    "nome": "Vinicius Jr.",
+                    "posicao": "Ponta-esquerda",
+                    "numero": 7     
+                },
+                {
+                    "id": "6",
+                    "nome": "Richarlison",
+                    "posicao": "Atacante",
+                    "numero": 9      
+                },
+                {
+                    "id": "7",
+                    "nome": "Fred",
+                    "posicao": "Meio-campista",
+                    "numero": 8 
+                },
+                {
+                    "id": "8",
+                    "nome": "Rodrygo",
+                    "posicao": "Ponta-direita",
+                    "numero": 6       
+                },
+                {
+                    "id": "9",
+                    "nome": "Éder Militão",
+                    "posicao": "Zagueiro",
+                    "numero": 3      
+                },
+                {
+                    "id": "10",
+                    "nome": "Alex Sandro",
+                    "posicao": "Lateral-esquerdo",
+                    "numero": 12   
+                },
+                {
+                    "id": "11",
+                    "nome": "Danilo",
+                    "posicao": "Lateral-direito",
+                    "numero": 2 
+                }
+            ]
+        }
+    ]
+}

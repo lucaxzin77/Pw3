@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026 </title>
+</head>
+<body>
+    
+    <h1>COPA DO MUNUS 2026</h1>
+
+    <h2 class="selecao"></h2>
+    <h5 class="tecnico"></h5>
+    <h5 class="grupo"></h5>
+   
+    <img class="logo" src="" alt="">
+
+        <table class="conquistas">
+            <tr>
+                <th>ANO</th>
+                <th>PAÍS</th>
+            </tr>
+        </table>
+
+        <table class="jogadores">
+            <tr>
+                <th>NOME</th>
+                <th>POS</th>
+                <th>NUMERO</th>
+            </tr>
+        </table>
+
+    <script>
+
+        let base_url = "http://localhost:3000";
+        let requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        fetch(`${base_url}/selecoes`, requestOptions)
+            .then(response => response.text())
+            .then(result => {
+                let selecoes = JSON.parse(result);
+                let conquistas = selecoes[0].conquistas;
+                let jogadores = selecoes[0].jogadores;
+                let tableConquistas = document.querySelector('.conquistas');
+                let tableJogadores = document.querySelector('.jogadores');
+
+                document.querySelector('.selecao').textContent = selecoes[0].nome.toUpperCase();
+                document.querySelector('.tecnico').textContent = selecoes[0].tecnico;
+                document.querySelector('.grupo').textContent = selecoes[0].grupo;
+                document.querySelector('.logo').src = selecoes[0].logo;
+
+
+                conquistas.forEach(conquista => {
+                    let row = document.createElement('tr');
+                    let anoCell = document.createElement('td');
+                    let paisCell = document.createElement('td');
+
+                    anoCell.textContent = conquista.ano;
+                    paisCell.textContent = conquista.pais;
+
+                    row.appendChild(anoCell);
+                    row.appendChild(paisCell);
+                    tableConquistas.appendChild(row);
+                });
+
+
+                jogadores.forEach(jogador => {
+                    let row = document.createElement('tr');
+                    let nomeCell = document.createElement('td');
+                    let posCell = document.createElement('td');
+                    let numeroCell = document.createElement('td');
+
+                    nomeCell.textContent = jogador.nome;
+                    posCell.textContent = jogador.posicao;
+                    numeroCell.textContent = jogador.numero;
+
+                    row.appendChild(nomeCell);
+                    row.appendChild(posCell);
+                    row.appendChild(numeroCell);
+                    tableJogadores.appendChild(row);
+                });
+            })
+            .catch(error => console.log('error', error));
+    </script>
+</body>
+</html>
