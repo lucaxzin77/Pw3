@@ -96,6 +96,100 @@
                     "numero": 2 
                 }
             ]
+        },
+            {
+            "id": "2",
+            "nome": "Alemanha",
+            "tecnico": "Julian Nagelsmann",
+            "logo": "https://images.vexels.com/media/users/3/152460/isolated/preview/825e80bac186d247dd9332f1440d20df-logo-do-time-de-futebol-da-alemanha.png?w=360",
+            "grupo": "E",
+            "conquistas": [
+                {
+                    "ano": 1954,
+                    "pais": "Suíça"
+                },
+                {
+                    "ano": 1974,
+                    "pais": "Alemanha Ocidental"
+                },
+                {
+                    "ano": 1990,
+                    "pais": "Itália"
+                },
+                {
+                    "ano": 2014,
+                    "pais": "Brasil"
+                }
+            ],
+            "jogadores": [
+                {
+                    "id": "1",
+                    "nome": "Manuel Neuer",
+                    "posicao": "Goleiro",
+                    "numero": 1
+                },
+                {
+                    "id": "2",
+                    "nome": "Joshua Kimmich",
+                    "posicao": "Meio-campista",
+                    "numero": 6
+                },
+                {
+                    "id": "3",
+                    "nome": "Antonio Rüdiger",
+                    "posicao": "Zagueiro",
+                    "numero": 2
+                },
+                {
+                    "id": "4",
+                    "nome": "Ilkay Gündogan",
+                    "posicao": "Meio-campista",
+                    "numero": 21
+                },
+                {
+                    "id": "5",
+                    "nome": "Thomas Müller",
+                    "posicao": "Atacante",
+                    "numero": 13
+                },
+                {
+                    "id": "6",
+                    "nome": "Kai Havertz",
+                    "posicao": "Atacante",
+                    "numero": 7
+                },
+                {
+                    "id": "7",
+                    "nome": "Jamal Musiala",
+                    "posicao": "Meio-campista",
+                    "numero": 10
+                },
+                {
+                    "id": "8",
+                    "nome": "Leroy Sané",
+                    "posicao": "Ponta-direita",
+                    "numero": 19
+                },
+                {
+                    "id": "9",
+                    "nome": "Niklas Süle",
+                    "posicao": "Zagueiro",
+                    "numero": 15
+                },
+                {
+                    "id": "10",
+                    "nome": "David Raum",
+                    "posicao": "Lateral-esquerdo",
+                    "numero": 3
+                },
+                {
+                    "id": "11",
+                    "nome": "Serge Gnabry",
+                    "posicao": "Ponta-direita",
+                    "numero": 20
+                }
+            ]
         }
+        
     ]
 }
