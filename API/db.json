@@ -208,6 +208,17 @@
         "#2e4dbd",
         "#ffffff"
       ]
+    },
+    {
+      "id": "b9d9",
+      "nome": "México",
+      "tecnico": "Javier Aguirre",
+      "logo": "https://upload.wikimedia.org/wikipedia/pt/f/f3/Mexico_national_football_team_crest_%282022%29.png",
+      "grupo": "G",
+      "cores": [
+        "#314c44",
+        "#f4313f"
+      ]
     }
   ]
 }
