@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Seleção</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-zinc-800 flex flex-col justify-center items-center">
+
+    <div class="fixed w-screen left-5 top-5">
+        <button id="btnVoltar" class="cursor-pointer text-white text-[24px] hover:text-zinc-200">
+            <a href="../selecoesLista/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </button>
+    </div>
+
+    <div class="w-screen flex flex-row justify-around items-center">
+        <div class="flex flex-col items-center gap-[25px] mt-[30px]">
+            <img id="logoSel" class="w-[75%]" src="" alt="">
+            <div class="text-center">
+                <div>
+                    <span class="font-bold text-white text-[20px]">Nome: </span>
+                    <span id="nomeSel" class="text-white text-medium"></span>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-[20px]">Técnico: </span>
+                    <span id="tecnicoSel" class="text-white text-medium">Julian Nagelsmann</span>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-[20px]">Grupo: </span>
+                    <span id="grupoSel" class="text-white text-medium">E</span>
+                </div>
+            </div>
+
+            <div class="overflow-hidden rounded-xl border border-zinc-200 shadow-sm w-full max-w-md">
+                <table class="w-full text-left border-collapse bg-white">
+                    <thead>
+                        <tr class="bg-zinc-900">
+                            <th colspan="2" class="px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-white">
+                                Conquistas
+                            </th>
+                        </tr>
+                        <tr class="bg-zinc-50 border-b border-zinc-200">
+                            <th class="px-4 py-2 text-sm font-semibold text-zinc-600">Ano</th>
+                            <th class="px-4 py-2 text-sm font-semibold text-zinc-600">País</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-zinc-100">
+                        <tr class="hover:bg-zinc-50 transition-colors">
+                            <td class="px-4 py-3 text-sm text-zinc-700">2024</td>
+                            <td class="px-4 py-3 text-sm text-zinc-700">Brasil</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-50 transition-colors">
+                            <td class="px-4 py-3 text-sm text-zinc-700">2022</td>
+                            <td class="px-4 py-3 text-sm text-zinc-700">França</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="w-[30%]">
+            <div class="overflow-hidden rounded-xl border border-zinc-200 shadow-sm w-full max-w-md">
+                <table class="w-full text-left border-collapse bg-white">
+                    <thead>
+                        <tr class="bg-zinc-900">
+                            <th colspan="3" class="px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-white">
+                                Jogadores
+                            </th>
+                        </tr>
+                        <tr class="bg-zinc-50 border-b border-zinc-200">
+                            <th class="px-4 py-2 text-sm font-semibold text-zinc-600">Nome</th>
+                            <th class="px-4 py-2 text-sm font-semibold text-zinc-600">Posição</th>
+                            <th class="px-4 py-2 text-sm font-semibold text-zinc-600">Número</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-zinc-100">
+                        <tr class="hover:bg-zinc-50 transition-colors">
+                            <td class="px-4 py-3 text-sm text-zinc-700">Manuel Neuer</td>
+                            <td class="px-4 py-3 text-sm text-zinc-700">Gol</td>
+                            <td class="px-4 py-3 text-sm text-zinc-700">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

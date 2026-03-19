@@ -29,13 +29,13 @@ const renderSelecoes = (lista) => {
             <span>${selecao.grupo}</span>
         </div>
         <div class="m-[5px] text-center">
-            <button data-id="${selecao.id}" class="btnEdit cursor-pointer text-zinc-700 m-[5px] p-[5px] transition-all duration-[0.3s] shadow-sm shadow-sky-700/50 rounded-lg  hover:scale-110 hover:bg-sky-600 hover:text-white active:scale-90 active:bg-sky-800 active:text-zinc-700">
+            <button data-id="${selecao.id}" class="btnEdit cursor-pointer text-zinc-700 m-[5px] p-[5px] transition-all duration-[0.3s] shadow-sm shadow-sky-700/50 rounded-lg  hover:scale-110 hover:bg-sky-600 hover:text-white active:scale-90 active:bg-sky-800 active:text-zinc-500">
                 <i class="fa-solid fa-pen"></i>
             </button>
             <button class="p-[5px] w-[50px] shadow-lg rounded-lg cursor-pointer bg-white transition-all duration-[0.3s] hover:bg-slate-200 active:scale-90">
-                <i class="fa-solid fa-eye"></i>
+                <a href="../selecoesInfo/index.html?id=${selecao.id}"><i class="fa-solid fa-eye"></i></a>
             </button>
-            <button data-id="${selecao.id}" id="btnDelete" class="cursor-pointer text-zinc-700 m-[5px] p-[5px] transition-all duration-[0.3s] shadow-sm shadow-red-700/50 rounded-lg hover:scale-110 hover:bg-red-500 hover:text-white active:scale-90 active:bg-red-800 active:text-zinc-700">
+            <button data-id="${selecao.id}" class="btnDelete cursor-pointer text-zinc-700 m-[5px] p-[5px] transition-all duration-[0.3s] shadow-sm shadow-red-700/50 rounded-lg hover:scale-110 hover:bg-red-500 hover:text-white active:scale-90 active:bg-red-800 active:text-zinc-500">
                 <i class="fa-solid fa-trash-can"></i>
             </button>
         </div>
@@ -46,7 +46,7 @@ const renderSelecoes = (lista) => {
 
 let selecaoEditandoId = null;
 
-const carregarDadosSelecao = (selecao) => {
+const carregarDadosInput = (selecao) => {
     selecaoEditandoId = selecao.id;
 
     document.getElementById("nomeSelecao").value = selecao.nome;
@@ -62,7 +62,7 @@ const carregarDadosSelecao = (selecao) => {
 
 selecoesContainer.addEventListener("click", async (e) => {
 
-    const deleteBtn = e.target.closest("#btnDelete");
+    const deleteBtn = e.target.closest(".btnDelete");
 
     if (deleteBtn) {
         const id = deleteBtn.dataset.id;
@@ -82,7 +82,7 @@ selecoesContainer.addEventListener("click", async (e) => {
 
         const selecao = selecoes.find(s => s.id === id);
 
-        carregarDadosSelecao(selecao);
+        carregarDadosInput(selecao);
         abrirModal();
     }
 });

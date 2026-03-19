@@ -1,6 +1,7 @@
 {
   "selecoes": [
     {
+      "id": "1",
       "nome": "Brasil",
       "tecnico": "Carlo Ancelotti",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Brazilian_Football_Confederation_logo.svg/960px-Brazilian_Football_Confederation_logo.svg.png",
@@ -8,8 +9,7 @@
       "cores": [
         "#1da1f2",
         "#000000"
-      ],
-      "id": "1"
+      ]
     },
     {
       "id": "2",
@@ -109,7 +109,6 @@
       ]
     },
     {
-      "id": "076e",
       "nome": "Itália",
       "tecnico": "Gennaro Gattuso",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_Italy_National_Football_Team_-_2023.svg/120px-Logo_Italy_National_Football_Team_-_2023.svg.png",
@@ -117,18 +116,8 @@
       "cores": [
         "#2e4dbd",
         "#ffffff"
-      ]
-    },
-    {
-      "id": "b9d9",
-      "nome": "México",
-      "tecnico": "Javier Aguirre",
-      "logo": "https://upload.wikimedia.org/wikipedia/pt/f/f3/Mexico_national_football_team_crest_%282022%29.png",
-      "grupo": "G",
-      "cores": [
-        "#314c44",
-        "#f4313f"
-      ]
+      ],
+      "id": "076e"
     }
   ]
 }
