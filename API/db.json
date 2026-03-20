@@ -9,8 +9,23 @@
       "cores": [
         "#1da1f2",
         "#000000"
+      ],
+      "conquistas": [
+        {
+          "ano": 1958,
+          "pais": "Suécia"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": "1",
+          "nome": "Ederson",
+          "posicao": "Goleiro",
+          "numero": "23"
+        }
       ]
     },
+    
     {
       "id": "2",
       "nome": "Alemanha",

@@ -32,7 +32,9 @@ form.addEventListener("submit", async (e)=>{
         tecnico: inputTecnico.value,
         logo: inputLogo.value,
         grupo: selectGrupo.value,
-        cores: [color1.value, color2.value]
+        cores: [color1.value, color2.value],
+        conquistas: [],
+        jogadores: []
     }
 
     const result = await createSelecao(data);
