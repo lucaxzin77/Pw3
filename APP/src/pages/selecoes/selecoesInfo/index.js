@@ -1,4 +1,4 @@
-import { getSelecoes } from '../../../services/selecoes.service.js';
+import { getSelecoes, putSelecao } from '../../../services/selecoes.service.js';
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -56,10 +56,32 @@ if (jogadores.length === 0) {
             <tr class="hover:bg-zinc-50 transition-colors">
                 <td class="px-4 py-3 text-sm text-zinc-700">${jogador.nome}</td>
                 <td class="px-4 py-3 text-sm text-zinc-700">${jogador.posicao}</td>
-                <td class="px-4 py-3 text-sm text-zinc-700">${jogador.camisa}</td>
+                <td class="px-4 py-3 text-sm text-zinc-700">${jogador.numero}</td>
             </tr>
         `;
-    });
+        });
+    }
 }
-}
+
+const botaoAbrirModal = document.getElementById('addJogadores')
+
+const modal = document.getElementById('modalJogadores')
+const botaoFecharModal = document.querySelector('.fecharModal');
+
+botaoFecharModal.addEventListener('click', ()=>{
+    modal.classList.add('hidden');
+})
+
+botaoAbrirModal.addEventListener('click', ()=>{
+    modal.classList.remove('hidden');
+})
+
+const form = document.getElementById('formPostJogadores');
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+
+})
+
 carregarSelecao();
