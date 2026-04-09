@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getVeiculos } from "../services/veiculoService";
 import type { Veiculo } from "../types/veiculo";
+import { VeiculoCard } from "../components/VeiculoCard";
 
 export function VeiculosList() {
   const [veiculos, setVeiculos] = useState<Veiculo[]>([]);
@@ -10,18 +11,12 @@ export function VeiculosList() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center h-screen bg-zinc-800">
-      <h1 className="font-bold text-4xl text-white m-7">Lista de Veículos</h1>
+    <div className="flex flex-col items-center h-screen bg-gray-100 dark:bg-zinc-800">
+      <h1 className="font-bold text-4xl dark:text-white m-7">Lista de Veículos</h1>
 
-    <div className="grid grid-cols-4 gap-4 h-full">
-      {veiculos.map((veiculo) => (
-        <div className="flex flex-col items-center justify-center shadow-lg w-72 rounded-lg text-center bg-white" key={veiculo.id}>
-          <h2>{veiculo.modelo}</h2>
-          <p>{veiculo.descricao}</p>
-            <strong className="text-green-900">
-                {veiculo.valor.toLocaleString('pt-BR', {style: "currency", currency: "BRL"})}
-            </strong>
-        </div>
+    <div className="grid grid-cols-4 gap-4 h-full mb-7">
+      {veiculos.map((v) => (
+        <VeiculoCard key={v.id} veiculo={v}/>
       ))}
       </div>
     </div>
