@@ -1,6 +1,7 @@
 import type { Veiculo } from "../types/veiculo";
 import type { Fabricante } from "../types/fabricante";
 import type { Anunciante } from "../types/anunciante";
+import { FaX } from "react-icons/fa6";
 
 interface Props {
   veiculo: Veiculo;
@@ -17,9 +18,9 @@ export function VeiculoModal({ veiculo, fabricantes, anunciantes, onClose }: Pro
 
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-black text-xl"
+          className="absolute top-3 right-3 cursor-pointer text-red-700 text-xl transition-all duration-300  hover:text-red-900"
         >
-          ✖
+          <FaX/>  
         </button>
 
         <div className="w-full h-64 bg-white flex items-center justify-center">
