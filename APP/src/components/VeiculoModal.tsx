@@ -1,7 +1,6 @@
 import type { Veiculo } from "../types/veiculo";
 import type { Fabricante } from "../types/fabricante";
 import type { Anunciante } from "../types/anunciante";
-import { FaX } from "react-icons/fa6";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
