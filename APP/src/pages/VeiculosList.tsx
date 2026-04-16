@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
-import { getVeiculos } from "../services/veiculoService";
-import type { Veiculo } from "../types/veiculo";
 import { VeiculoCard } from "../components/VeiculoCard";
+import { useVeiculos } from "../hooks/useVeiculos";
 
 export function VeiculosList() {
-  const [veiculos, setVeiculos] = useState<Veiculo[]>([]);
+  const { veiculos, loading, error } = useVeiculos();
 
-  useEffect(() => {
-    getVeiculos().then(setVeiculos);
-  }, []);
+  if (loading){
+    return <p className="font-bold text-[75px] text-center">Carregando...</p>
+  }
+
+  if(error){
+    return <p>{error}</p>
+  }
 
   return (
     <div className="flex flex-col items-center h-screen bg-gray-100 dark:bg-zinc-800">
