@@ -38,8 +38,9 @@ export function VeiculoModal({ veiculo, fabricantes, anunciantes, onClose }: Pro
               src={foto}
               className="w-full h-full object-contain flex-shrink-0"
             />
-          ))}
-        </div>
+          ))
+        }
+        </div> 
 
           {fotoAtual > 0 && (
             <button
