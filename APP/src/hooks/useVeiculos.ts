@@ -7,20 +7,20 @@ export function useVeiculos() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const data = await getVeiculos();
-        setVeiculos(data);
-      } catch (err) {
-        setError(`Erro ao carregar veículos: ${err instanceof Error ? err.message : "Erro desconhecido"}`);
-      } finally {
-        setLoading(false);
-      }
+  async function fetchData() {
+    try {
+      const data = await getVeiculos();
+      setVeiculos(data);
+    } catch (err) {
+      setError(`Erro ao carregar veículos: ${err instanceof Error ? err.message : "Erro desconhecido"}`);
+    } finally {
+      setLoading(false);
     }
-
+  }
+  
+  useEffect(() => {
     fetchData();
   }, []);
 
-  return { veiculos, loading, error };
+  return { veiculos, loading, error, refetch: fetchData };
 }
